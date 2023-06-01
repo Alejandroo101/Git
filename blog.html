@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Proyecto 1DAW - SOLVAM</title>
+
+	<!-- CSS ================================================== -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/encabezado.css">
+	<link rel="stylesheet" href="css/pie.css">
+	<!-- Favicons ================================================== -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<!-- JS ================================================== -->
+	<style>
+       
+       body{
+			background-image:url(img/rojo.webp);
+		}
+
+
+
+        #contenedor{
+		width: 1170px;
+		margin: 0px auto;
+        height: 2000px;
+		background-image: url("img/page-bg-1.jpg");
+		overflow: auto;
+		}
+
+        div#contenido{
+		height: 1400px;margin-top: 10px;margin-bottom: 10px;
+        border: 1px solid red;
+		}
+        .pub{   
+        width: 700px;
+        height:250px;
+        border: 1px solid red;
+        margin-top: 15px;
+        margin-left: 15px;
+        }
+       
+
+        .pub .img2{
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+        background-image: url(img/wizard.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        }
+
+        .pub .title2{
+        float: right;
+        width: 440px;
+        background-color: white;
+        border: 1px dashed grey;
+        height: 55px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+        }
+
+        .pub .info2{
+        float: right;
+        width: 440px;
+        border: 1px dashed grey;
+        height: 80px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+
+        }
+        
+        .pub .rea2{
+            
+        width: 80px;
+        height: 30px;
+        float: right;
+        border: solid red 1px;
+        text-align: center;
+        position: relative;
+        top: -145px;
+        left: 100px;
+        border-radius: 3px;
+        color: white;
+        background-color:rgb(203, 91, 11);
+        font-weight: bold;
+
+        }
+        .pub .img3{
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+        background-image: url(img/wizard.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        }
+
+        .pub .title3{
+        float: right;
+        width: 440px;
+        background-color: white;
+        border: 1px dashed grey;
+        height: 55px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+        }
+
+        .pub .info3{
+        float: right;
+        width: 440px;
+        border: 1px dashed grey;
+        height: 80px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+
+        }
+        
+        .pub .rea3{
+            
+        width: 80px;
+        height: 30px;
+        float: right;
+        border: solid red 1px;
+        text-align: center;
+        position: relative;
+        top: -145px;
+        left: 100px;
+        border-radius: 3px;
+        color: white;
+        background-color:rgb(203, 91, 11);
+        font-weight: bold;
+
+        }
+        .pub .img4{
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+        background-image: url(img/wizard.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        }
+
+        .pub .title4{
+        float: right;
+        width: 440px;
+        background-color: white;
+        border: 1px dashed grey;
+        height: 55px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+        }
+
+        .pub .info4{
+        float: right;
+        width: 440px;
+        border: 1px dashed grey;
+        height: 80px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+
+        }
+        
+        .pub .rea4{
+            
+        width: 80px;
+        height: 30px;
+        float: right;
+        border: solid red 1px;
+        text-align: center;
+        position: relative;
+        top: -145px;
+        left: 100px;
+        border-radius: 3px;
+        color: white;
+        background-color:rgb(203, 91, 11);
+        font-weight: bold;
+
+        }
+        .pub .img5{
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+        background-image: url(img/wizard.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        }
+
+        .pub .title5{
+        float: right;
+        width: 440px;
+        background-color: white;
+        border: 1px dashed grey;
+        height: 55px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+        }
+
+        .pub .info5{
+        float: right;
+        width: 440px;
+        border: 1px dashed grey;
+        height: 80px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+
+        }
+        
+        .pub .rea5{
+            
+        width: 80px;
+        height: 30px;
+        float: right;
+        border: solid red 1px;
+        text-align: center;
+        position: relative;
+        top: -145px;
+        left: 100px;
+        border-radius: 3px;
+        color: white;
+        background-color:rgb(203, 91, 11);
+        font-weight: bold;
+
+        }
+        .pub .img6{
+        height: 250px;
+        width: 250px;
+        border: 1px solid black;
+        background-image: url(img/wizard.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        }
+
+        .pub .title6{
+        float: right;
+        width: 440px;
+        background-color: white;
+        border: 1px dashed grey;
+        height: 55px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+        }
+
+        .pub .info6{
+        float: right;
+        width: 440px;
+        border: 1px dashed grey;
+        height: 80px;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        font-family: sans-serif;
+        position: relative;
+        bottom: 250px; 
+        padding-top: 5px;
+
+        }
+        
+        .pub .rea6{
+            
+        width: 80px;
+        height: 30px;
+        float: right;
+        border: solid red 1px;
+        text-align: center;
+        position: relative;
+        top: -145px;
+        left: 100px;
+        border-radius: 3px;
+        color: white;
+        background-color:rgb(203, 91, 11);
+        font-weight: bold;
+
+        }
+
+
+        .pub .menu{
+        width: 400px;
+        height: 30px;
+        float: right;
+        margin-top: 10px;
+        position: relative;
+        bottom: 190px;
+        right: 15px;
+
+
+
+        }
+
+        .pub .menu li a{
+        float: right;
+		text-decoration: none;
+		color: rgb(59, 59, 59);
+        margin-right: 25px;
+        
+        }
+
+        .pub .menu li a:hover{
+        color: orangered;
+        
+        }
+
+        .derecha{
+            position: relative;
+            width: 400px;
+            height: 1318px;
+            border: 1px solid red;
+            left: 750px;
+            bottom: 1396px;
+
+        }
+         
+        .derecha .buscar{
+        border:1px solid black;
+        width: auto;
+        height: 100px;
+        
+
+
+        }
+        
+        .derecha .categoria{   
+            padding: 15px;
+            font-family:Arial;
+            font-style: italic;
+            font-size: 20px;
+            border: 2px dashed rgb(192, 192, 192);
+        }
+ 
+        .derecha .info{
+            padding-top:65px;
+            padding-left: 20px;
+            font-family: sans-serif;
+            font-size: 18px;
+
+
+        }
+        
+        .derecha .info .info1{
+        padding-top: 10px;
+        border: 1px dashed grey;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+
+        }
+        .derecha .info .info1:hover{
+        color: red;
+
+
+
+
+        }
+
+        .derecha .lugar{   
+            margin-top: 30px;
+            padding: 15px;
+            font-family: sans-serif;
+            font-size: 20px;
+            border: 2px dashed rgb(192, 192, 192);
+        }
+
+        .derecha .post{
+        width: auto;
+		height: 120px;
+		margin-top: 20px;
+        padding: 10px;
+        background-color:rgb(202, 138, 138);
+        
+        
+        }
+        .derecha .post .foto{
+        height: 120px;
+        width: 120px;
+        background-color: grey;
+
+
+        }    
+
+        .derecha .post .texto1{
+        position:relative; 
+        left: 140px;
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        }
+        .derecha .post .texto2{
+        position:relative; 
+        bottom: 200px;
+        left: 140px;
+
+
+            
+        }   
+
+        .derecha .video{   
+            margin-top: 20px;
+            padding: 15px;
+            font-family:Arial;
+            font-style: italic;
+            font-size: 20px;
+            border: 2px dashed rgb(192, 192, 192);
+        }
+
+
+        .derecha .widget{
+        width: 400px;
+        height: 250px;
+        
+        background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+        margin-top: 50px;
+
+        }
+
+
+        #menu {
+ 		display: flex;
+ 		justify-content: center;
+		}
+
+		#menu ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		display: flex;
+		}
+
+		#menu ul li {
+ 
+  		margin-top: 21px;
+		}
+
+		#menu ul li a {
+  		text-decoration: none;
+  		color: #7e7a7a;
+  		padding: 20px;
+		}
+
+
+		#menu ul li a:hover {
+  		background-color: #d8450b;
+		}
+
+		div#encabezado{
+		height: 150px;margin-top: 5px;margin-bottom: 5px;
+		width: auto;
+		}
+		div.logo{
+		width: 470px;height: 80px;float: left;
+		position: relative;
+		top: 20px;
+		left: 30px;
+		background-image: url("img/logo.png");
+		background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+		}
+
+
+		div#menu{
+		width: 555px;height: 57px;float: right;
+		position: relative;
+		top: 20px;
+		left: -30px;
+		border: 1px solid red;
+		border-right: none;
+		border-left: none;
+		}
+        
+        #pie{
+		
+		width: auto;
+		height: 450px;
+		background-color: rgb(114, 113, 113);
+        position: relative;
+        bottom: 1330px;
+		}
+		.pie1{
+		width: 200px;
+		height: 190px;
+		float: left;
+		margin-top: 10px;
+		border: 1px solid red;
+		}
+		.pie1 .titulo3{
+		height: 50px;
+		width: auto;
+		}
+		.pie1 .des5{
+		border: none;
+		height: 75px;
+		width: auto;
+
+		}
+
+		.pie2{
+		width: 200px;
+		height: 250px;
+		float: left;
+		margin-left: 70px;
+		margin-top: 10px;
+		background-image: url(img/google.jpg);
+		background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+		border: 1px solid red;
+		}
+		.pie3{
+		margin-left: 90px;
+		width: 200px;
+		height: 270px;
+		float: left;
+		margin-top: 10px;
+	    border: 1px solid red;
+		}
+		.pie3 .img4{
+		width: auto;
+		height: 150px;
+		
+		}
+		.pie3 .des3{
+		border: none;
+		width: auto;
+		height: 60px;
+
+		}
+
+		.pie4{
+		margin-left: 65px;
+		width: 320px;
+		height: 290px;
+		float:left;
+		margin-top: 30px;
+		
+		}
+		.pie5{
+		margin-left: 15px;
+		width: 262px;
+		height: 50px;
+		position: relative;
+		float:left;
+		border: none;
+        
+		}
+		.facebook {
+   		float: left;
+   		width: 50px;
+   		height: 45px;
+        background-image: url(img/social-icons.png);
+		border: none;
+		}
+
+		.facebook:hover {
+   		width: 50px;
+  		height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position: left 45px;
+
+		}
+
+		.twitter {
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -50px;
+		border: none;
+		}
+		.twitter:hover {
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.balon{
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -100px;
+		border: none;
+		}
+		.balon:hover{
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.wifi{  
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -153px;
+		border: none;
+		}
+		.wifi:hover{  
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.arbol{
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -204px;
+		border: none;
+		}
+		.arbol:hover{
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+
+
+		.pie6{
+		margin-left: 15px;
+		width: 1100px;
+		height: 35px;
+		margin-top: 400px;
+		background-color: rgb(62, 53, 53);
+		border: none;
+		float: left;
+		position: relative;
+        top: -390px;
+		}
+		.pie6 .letra{
+		color: grey;
+		padding-top:6px;
+		padding-left:6px;
+		border: none;
+		}
+		
+
+
+		.pie6 li a{
+		width: auto;height: auto;float: right;
+		position: relative;
+		padding: 12px;
+		bottom: 24px;
+		text-decoration: none;
+		color: white;
+		}
+		.pie6 li a:hover{
+		color: #d8450b;
+		}
+
+
+
+		.pie4 .titulo{
+		width: auto;
+		height: 40px;
+		border: none;
+		text-align: center;
+		margin-top: 5px;
+		}
+		.pie4 .fondo{
+		width: 70px;
+		height: 45px;
+		border: 1px solid red;
+		float: left;
+		margin-right: 8px;
+		margin-left: 22px;
+		margin-top: 10px;
+		}
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div id="contenedor">
+        <div id="encabezado">
+            <div class="logo">
+            </div>
+            <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="pages.html">Pages</a></li>
+                  <li><a href="galeria.html">Gallery</a></li>
+                  <li><a href="contacto.html">Contact</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="http://alejandrojim.com.es:8080/alejandrojim/AplicacionWebTomcat/webapp/saludosbis.jsp">Acceso</a></li>
+                </ul>
+              </div>
+            
+            </div>
+        <div id="contenido">
+        <div class="pub" >
+            <div class="img2"></div>
+            <div class="title2">TITULO</div>
+            <div class="info2"></div>
+            <input type="submit" value="Read More" class="rea2">
+            <div class="menu">
+		   <ul>
+			    <li><a href="#">Comments</a></li>
+                 <li><a href="#">photoshop,tutorials</a></li>
+                 <li><a href="#">Fecha</a></li>
+                 <li><a href="#">Admin</a></li>
+			
+		  </ul>
+        </div>
+        </div>
+        <div class="pub">
+            <div class="img3"></div>
+            <div class="title3">TITULO</div>
+            <div class="info3"></div>
+            <input type="submit" value="Read More" class="rea3">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">photoshop,tutorials</a></li>
+                    <li><a href="#">Fecha</a></li>
+                    <li><a href="#">Admin</a></li>
+                 
+               </ul>
+             </div>
+        </div>
+        <div class="pub">
+            <div class="img4"></div>
+            <div class="title4">TITULO</div>
+            <div class="info4"></div>
+            <input type="submit" value="Read More" class="rea4">
+            <div class="menu">
+                <ul>
+                 <li><a href="#">Comments</a></li>
+                 <li><a href="#">photoshop,tutorials</a></li>
+                 <li><a href="#">Fecha</a></li>
+                 <li><a href="#">Admin</a></li>       
+               </ul>
+             </div>
+        </div>
+        <div class="pub">
+            <div class="img5"></div>
+            <div class="title5">TITULO</div>
+            <div class="info5"></div>
+            <input type="submit" value="Read More" class="rea5">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">photoshop,tutorials</a></li>
+                    <li><a href="#">Fecha</a></li>
+                    <li><a href="#">Admin</a></li>
+               </ul>
+             </div>
+        </div>
+        <div class="pub">
+            <div class="img6"></div>
+            <div class="title6">TITULO</div>
+            <div class="info6"></div>
+            <input type="submit" value="Read More" class="rea6">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">photoshop,tutorials</a></li>
+                    <li><a href="#">Fecha</a></li>
+                    <li><a href="#">Admin</a></li>
+                 
+               </ul>
+             </div>
+        </div>
+        </div>
+        <div class="derecha">
+            <div class="buscar">BUSCADOR  xd</div>
+            <div class="categoria">Categories</div>
+            <div class="solvam"></div>
+            <div class="info">
+                <div class="info1"></div>
+                <div class="info1">DESIGN</div>
+                <div class="info1">ILUSTRATION</div>
+                <div class="info1">TUTORIAL</div>
+                <div class="info1">INFO</div>
+               
+            </div>
+            <div class="lugar">POPULAR POSTS</div>
+            <div class="post">
+            <div class="foto"></div>
+            <div class="texto1">hola</div>
+            <div class="texto2">hola</div>
+            </div>
+            <div class="post">
+                <div class="foto"></div>
+                <div class="texto1">hola</div>
+                <div class="texto2">hola</div>
+                </div>
+            <div class="post">
+                <div class="foto"></div>
+                <div class="texto1">hola</div>
+                <div class="texto2">hola</div>
+                </div>
+
+            <div class="video">VIDEO WIDGET</div>   
+            <div class="widget"><iframe width="400" height="250" src="https://www.youtube.com/embed/L1r4z2WEVh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        </div>
+
+        <div id="pie">
+            <div class="pie1">
+                <div class="titulo3"></div>
+                <div class="des5"></div>
+                <div class="des5"></div>
+            </div>	
+            <div class="pie2"></div>
+            <div class="pie3">
+                <div class="img4"></div>
+                <div class="des3"></div>
+                <div class="des3"></div>
+            </div>
+            <div class="pie4">
+        
+            <div class="titulo">TITLE</div>	
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+            <div class="fondo"></div>
+        
+            </div>
+            <div class="pie5">
+                <div class="facebook"></div>
+                <div class="twitter"></div>
+                <div class="balon"></div>
+                <div class="wifi"></div>
+                <div class="arbol"></div>
+            </div>	
+            <div class="pie6">
+                <div class="letra">Copyright 2017 SOLVAM. All rights reserverd</div>
+                   <ul>
+                    <li><a href="http://alejandrojim.com.es:8080/alejandrojim/AplicacionWebTomcat/webapp/saludosbis.jsp">Acceso</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contact</a></li>
+                    <li><a href="galeria.html">Gallery</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    
+                  </ul>
+                
+          
+            </div>
+    
+        </div>
+    
+  
+    
+
+</body>
+</html> 

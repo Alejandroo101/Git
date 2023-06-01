@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Proyecto 1DAW - SOLVAM</title>
+
+	<!-- CSS ================================================== -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/encabezado.css">
+	<link rel="stylesheet" href="css/pie.css">
+	<!-- Favicons ================================================== -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<!-- JS ================================================== -->
+	<style>
+ 		body{
+			background-image:url(img/rojo.webp);
+		}
+
+
+	
+		div{
+		border:1px solid red;
+		}
+		div#contenedor{
+		width: 1170px;
+		margin: 0px auto;
+		overflow: auto;
+		background-image: url("img/page-bg-1.jpg");
+
+		}
+		div#encabezado{
+		height: 150px;margin-top: 5px;margin-bottom: 5px;
+		width: auto;
+		}
+		div.logo{
+		width: 470px;height: 80px;float: left;
+		position: relative;
+		top: 20px;
+		left: 30px;
+		background-image: url("img/logo.png");
+		background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+		}
+
+
+		div#menu{
+		width: 555px;height: 57px;float: right;
+		position: relative;
+		top: 20px;
+		left: -30px;
+		border-right: none;
+		border-left: none;
+
+		}
+
+		p.limpiar{clear: both;}
+
+		div#galeria{
+		height: 350px;margin-top: 10px;margin-bottom: 10px;
+		}
+		div.animacion{
+		height: 350px;width: 750px;float: left;
+		border: 3px solid rgb(195, 172, 172);
+		}
+		.animacion{
+		overflow: hidden;
+		}
+
+		.animacion ul {
+		display: flex;
+		padding: 0;
+		width: 400%;
+		animation: slide 20s infinite alternate ease-in-out;
+		}
+
+		.animacion li {
+		width: 100%;
+		list-style: none;
+		}
+
+		.animacion img {
+		width: 100%;
+		}
+
+		@keyframes slide {
+		0% {margin-left: 0;}
+		20% {margin-left: 0;}
+	
+		25% {margin-left: -100%;}
+		45% {margin-left: -100%;}
+	
+		50% {margin-left: -200%;}
+		70% {margin-left: -200%;}
+	
+		75% {margin-left: -300%;}
+		100% {margin-left: -300%;}
+		}
+
+		div.noticiadestacada{
+		height: 250px;width: 400px;float: right;
+		margin-top: 25px;
+			border: solid red 1px;
+		}
+		div#contenido {
+		width: 1160px;
+		height: 650px;
+		border: 1px solid red;
+
+		}
+
+
+		div.noticia{
+		height: 280px;width: 250px;float: left;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		margin-left: 15px;
+		border: solid red 1px;
+		}
+
+		#menu {
+ 		display: flex;
+ 		justify-content: center;
+		}
+
+		#menu ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		display: flex;
+		}
+
+		#menu ul li {
+ 
+  		margin-top: 21px;
+		}
+
+		#menu ul li a {
+  		text-decoration: none;
+  		color: #7e7a7a;
+  		padding: 20px;
+		}
+
+
+		#menu ul li a:hover {
+  		background-color: #d8450b;
+		}
+
+
+
+		.noticiadestacada .titulo{
+		margin: auto;
+		border: 1px solid red;
+		width: auto;
+		height: 45px;
+		background-color: black;
+		}
+
+		.noticiadestacada .cuerpo{
+		margin: auto;
+		border: 1px solid red;
+		width: auto;
+		height: 140px;
+		background-color: black;
+		}
+		.noticiadestacada .resumen{
+		margin: auto;
+		border: 1px solid red;
+		width: auto;
+		height: 60px;
+		background-color: black;
+		}
+		.noticia .imagen{
+		margin: auto;
+		width: auto;
+		height: 220px;
+		border: none;
+
+		}
+		.noticia .titulo{
+		width: auto;
+		height: 40px;
+		background-color:rgb(196, 203, 184);
+		border: none;
+		}
+		.noticia .cuerpo{
+		width: auto;
+		height: 20px;
+		background-color:rgb(94, 96, 89);
+		border: none;
+
+
+		}
+		#pie{
+		
+		width: auto;
+		height: 450px;
+		background-color: rgb(114, 113, 113);
+
+		}
+		.pie1{
+		width: 200px;
+		height: 190px;
+		float: left;
+		margin-top: 10px;
+		
+		}
+		.pie1 .titulo3{
+		height: 50px;
+		width: auto;
+		}
+		.pie1 .des5{
+		border: none;
+		height: 75px;
+		width: auto;
+
+		}
+
+		.pie2{
+		width: 200px;
+		height: 250px;
+		float: left;
+		margin-left: 70px;
+		margin-top: 10px;
+		
+		background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+		
+		}
+		.pie3{
+		margin-left: 90px;
+		width: 200px;
+		height: 270px;
+		float: left;
+		margin-top: 10px;
+	
+		}
+		.pie3 .img4{
+		width: auto;
+		height: 150px;
+		
+
+
+
+		}
+		.pie3 .des3{
+		border: none;
+		width: auto;
+		height: 60px;
+
+		}
+
+		.pie4{
+		margin-left: 65px;
+		width: 320px;
+		height: 290px;
+		float:left;
+		margin-top: 30px;
+		
+		}
+		.pie5{
+		margin-left: 15px;
+		width: 262px;
+		height: 50px;
+		position: relative;
+		float:left;
+		border: none;
+				
+		}
+		.facebook {
+   		float: left;
+   		width: 50px;
+   		height: 45px;
+        background-image: url(img/social-icons.png);
+		border: none;
+		}
+
+		.facebook:hover {
+   		width: 50px;
+  		height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position: left 45px;
+
+		}
+
+		.twitter {
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -50px;
+		border: none;
+		}
+		.twitter:hover {
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.balon{
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -100px;
+		border: none;
+		}
+		.balon:hover{
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.wifi{  
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -153px;
+		border: none;
+		}
+		.wifi:hover{  
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.arbol{
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -204px;
+		border: none;
+		}
+		.arbol:hover{
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+
+
+		.pie6{
+		margin-left: 15px;
+		width: 1100px;
+		height: 35px;
+		margin-top: 400px;
+		background-color: rgb(62, 53, 53);
+		border: none;
+		
+		
+		}
+		.pie6 .letra{
+		color: grey;
+		padding-top:6px;
+		padding-left:6px;
+		border: none;
+		}
+		
+
+
+		.pie6 li a{
+		width: auto;height: auto;float: right;
+		position: relative;
+		padding: 12px;
+		bottom: 24px;
+		text-decoration: none;
+		color: white;
+		}
+		.pie6 li a:hover{
+		color: #d8450b;
+		}
+
+
+
+		.pie4 .titulo{
+		width: auto;
+		height: 40px;
+		border: none;
+		text-align: center;
+		margin-top: 5px;
+		}
+		.pie4 .fondo{
+		width: 70px;
+		height: 45px;
+		border: 1px solid red;
+		float: left;
+		margin-right: 8px;
+		margin-left: 22px;
+		margin-top: 10px;
+		}
+		
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<div id="contenedor">
+	<div id="encabezado">
+		<div class="logo">
+		</div>
+		<div id="menu">
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="features.html">Features</a></li>
+			  <li><a href="pages.html">Pages</a></li>
+			  <li><a href="galeria.html">Gallery</a></li>
+			  <li><a href="contacto.html">Contact</a></li>
+			  <li><a href="blog.html">Blog</a></li>
+			  <li><a href="http://alejandrojim.com.es:8080/alejandrojim/AplicacionWebTomcat/webapp/saludosbis.jsp">Acceso</a></li>
+			</ul>
+		  </div>
+		
+		</div>
+
+	
+	<p class="limpiar"></p>
+	<div id="galeria">
+		<div class="animacion">
+			<ul>
+				<li><img src="img/coc.png" alt=""></li>
+				<li><img src="img/coc2.png" alt=""></li>
+				<li><img src="img/coc3.jpg" alt=""></li>
+				<li><img src="img/coc4.jpeg" alt=""></li>
+			</ul>
+		</div>
+		<div class="noticiadestacada">
+
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+			<div class="resumen">
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="contenido">
+		<div class="noticia">
+			<div class="imagen">
+			</div>
+			<div class="titulo">
+			</div>
+			<div class="cuerpo">
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen">
+
+			</div>
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen">
+
+			</div>
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen">
+
+			</div>
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen">
+
+			</div>
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen">
+
+			</div>
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen">
+
+			</div>
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+		</div>
+		<div class="noticia">
+			<div class="imagen">
+
+			</div>
+			<div class="titulo">
+
+			</div>
+			<div class="cuerpo">
+
+			</div>
+		</div>
+	</div>
+	<div id="pie">
+	<div class="pie1">
+		<div class="titulo3"></div>
+		<div class="des5"></div>
+		<div class="des5"></div>
+	</div>	
+	<div class="pie2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24628.176387017054!2d-0.45968135!3d39.502705750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60454430dc7c97%3A0xb8683d03b5861eec!2sMercadona!5e0!3m2!1ses!2ses!4v1685346662573!5m2!1ses!2ses" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+	<div class="pie3">
+		<div class="img4"></div>
+		<div class="des3"></div>
+		<div class="des3"></div>
+	</div>
+	<div class="pie4">
+
+	<div class="titulo">TITLE</div>	
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+	<div class="fondo"></div>
+
+	</div>
+	<div class="pie5">
+		<div class="facebook"></div>
+		<div class="twitter"></div>
+		<div class="balon"></div>
+		<div class="wifi"></div>
+		<div class="arbol"></div>
+	</div>	
+	<div class="pie6">
+		<div class="letra">Copyright 2017 SOLVAM. All rights reserverd</div>
+		   <ul>
+			<li><a href="http://alejandrojim.com.es:8080/alejandrojim/AplicacionWebTomcat/webapp/saludosbis.jsp">Acceso</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contacto.html">Contact</a></li>
+			<li><a href="galeria.html">Gallery</a></li>
+			<li><a href="features.html">Features</a></li>
+			<li><a href="index.html">Home</a></li>
+			
+		  </ul>
+		
+	</div>
+	</div>
+	</div>
+	
+	</body>
+
+
+</html>

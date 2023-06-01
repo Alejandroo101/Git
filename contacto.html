@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Proyecto 1DAW - SOLVAM</title>
+
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/encabezado.css">
+    <link rel="stylesheet" href="css/pie.css">
+
+    <!-- Favicons ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- JS ================================================== -->
+    <style>
+        	
+			body{
+			background-image:url(img/rojo.webp);
+		}
+
+		div#contenedor{
+		width: 1170px;
+		margin: 0px auto;
+		overflow: auto;
+		background-image: url("img/page-bg-1.jpg");
+        height: 1278px;
+		}
+		#menu {
+ 		display: flex;
+ 		justify-content: center;
+		}
+
+		#menu ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		display: flex;
+		}
+
+		#menu ul li {
+  		margin-top: 21px;
+		}
+
+		#menu ul li a {
+  		text-decoration: none;
+  		color: #7e7a7a;
+  		padding: 20px;
+		}
+
+
+		#menu ul li a:hover {
+  		background-color: #d8450b;
+		}
+
+		div#encabezado{
+		height: 150px;margin-top: 5px;margin-bottom: 5px;
+		width: auto;
+		}
+		div.logo{
+		width: 470px;height: 80px;float: left;
+		position: relative;
+		top: 20px;
+		left: 30px;
+		background-image: url("img/logo.png");
+		background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+		}
+
+
+		div#menu{
+		width: 555px;height: 57px;float: right;
+		position: relative;
+		top: 20px;
+		left: -30px;
+		border: 1px solid red;
+		border-right: none;
+		border-left: none;
+		}
+
+		p.limpiar{clear: both;}
+
+		div#galeria{
+		height: 350px;margin-top: 10px;margin-bottom: 10px;
+		}
+		div.animacion{
+		height: 350px;width: 750px;float: left;
+		border: 3px solid red;
+		}
+		div.noticiadestacada{
+		height: 250px;width: 400px;float: right;
+		margin-top: 25px;
+
+		}
+		div#contenido {
+		width: 1160px;
+		
+
+		}
+
+
+		div.noticia{
+		height: 280px;width: 250px;float: left;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		margin-left: 15px;
+		}
+
+
+        #contacto {
+            width: 1160px;
+            margin: 0 auto;
+            border: 2px solid red;
+            overflow: auto;
+            
+
+        }
+
+        .limpiar {
+            clear: both;
+        }
+
+        #zona1 {
+            border: 2px solid red;
+            width: 700px;
+            height: 660px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .title {
+            margin-left: 10px;
+            top: 20px;
+            width: auto;
+            height: 50px;
+            text-shadow: 2px 2px 4px red;
+            margin-top: 5px;
+        }
+       
+
+
+        .descrip {
+            margin-left: 5px;
+            margin-top: 10px;
+            padding-top: 10px;
+            width: auto;
+            height: 90px;
+         
+        }
+        .mensaje {
+  
+            margin-top: 5px;
+            border-radius: 8px;
+            width: auto;
+            height: 30px;
+            border: 1px solid rgb(30, 224, 40);
+            background-color: rgb(95, 238, 150, 0.3);
+            color: green;
+            padding-top: 10px;
+            padding-left: 20px;
+            transition: opacity 3s;
+        }
+
+            .enviar:active ~ #mensaje {
+             display: block;
+             opacity: 1;
+        }
+
+            #mensaje span {
+             opacity: 0;
+             transition: opacity 3s;
+            }
+
+        .cuestionario {
+            width: auto;
+            height: 430px;
+           
+        }
+
+        .name {
+            margin-top: 18px;
+            margin-left: 10px;
+            width: 475px;
+            height: 45px;
+        }
+
+        .address {
+            margin-top: 18px;
+            margin-left: 10px;
+            width: 475px;
+            height: 45px;
+        }
+
+        .url {
+            margin-top: 18px;
+            margin-left: 10px;
+            width: 475px;
+            height: 45px;
+        }
+
+        .caja {
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 575px;
+            height: 150px;
+            border: 1px solid red;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        .foto {
+            border: 1px solid black;
+            width: 44px;
+            height: 44px;
+        }
+
+        .name .foto {
+            background-image: url(img/user-avatar.jpg);
+        }
+
+        .address .foto {
+            background-image: url(img/correo.png);
+            background-size: cover; 
+  	    	background-position: center; 
+ 	    	background-repeat: no-repeat;
+
+        }
+
+        .url .foto {
+            background-image: url(img/buscador.png);
+            background-size: cover; 
+  	    	background-position: center; 
+ 	    	background-repeat: no-repeat;
+        }
+
+        .texto {
+            position: relative;
+            width: 425px;
+            height: 45px;
+            resize: none;
+            box-sizing: border-box;
+            top: -45px;
+            left: 46px;
+        }
+
+        .enviar {
+            width: 150px;
+            height: 30px;
+            margin-top: 18px;
+            margin-left: 10px;
+            border: solid red 1px;
+            text-align: center;
+            padding-top: 5px;
+            border-radius: 3px;
+            color: white;
+            background-image: linear-gradient(to bottom, #535353,red);
+            font-weight: bold;
+
+        }
+
+        .enviar:hover {
+            color: grey;
+            transform: translateY(5px);
+
+        }
+        #zona2{
+            border: solid 1px red;
+            width: 350px;
+            height: 650px;            
+            float: right;
+      
+        }
+        #zona2 .datos{   
+            padding: 15px;
+            font-family: sans-serif;
+            font-size: 20px;
+            border: 2px dashed rgb(192, 192, 192);
+        }
+ 
+        #zona2 .info{
+            padding-top:65px;
+            padding-left: 20px;
+            font-family: sans-serif;
+            font-size: 18px;
+
+
+        }
+        
+        #zona2 .info .info2{
+        padding-top: 10px;
+
+            
+        }
+        #zona2 .info .info3{
+        padding-top: 20px;
+
+        }
+        #zona2 .info .info4{
+        padding-top: 15px;
+        color: red;
+        }
+
+        #zona2 .lugar{   
+            margin-top: 30px;
+            padding: 15px;
+            font-family: sans-serif;
+            font-size: 20px;
+            border: 2px dashed rgb(192, 192, 192);
+        }
+
+        #zona2 .mapa{
+        width: 350px;
+		height: 273px;
+		float: left;
+        
+		background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+
+        }
+
+        #pie{
+		
+		width: auto;
+		height: 450px;
+		background-color: rgb(114, 113, 113);
+
+		}
+		.pie1{
+		width: 200px;
+		height: 190px;
+		float: left;
+		margin-top: 10px;
+		border: 1px solid red;
+		}
+		.pie1 .titulo3{
+		height: 50px;
+		width: auto;
+		}
+		.pie1 .des5{
+		border: none;
+		height: 75px;
+		width: auto;
+
+		}
+
+		.pie2{
+		width: 200px;
+		height: 250px;
+		float: left;
+		margin-left: 70px;
+		margin-top: 10px;
+		background-image: url(img/google.jpg);
+		background-size: cover; 
+  		background-position: center; 
+ 		background-repeat: no-repeat;
+		border: 1px solid red;
+		}
+		.pie3{
+		margin-left: 90px;
+		width: 200px;
+		height: 270px;
+		float: left;
+		margin-top: 10px;
+	    border: 1px solid red;
+		}
+		.pie3 .img4{
+		width: auto;
+		height: 150px;
+		
+		}
+		.pie3 .des3{
+		border: none;
+		width: auto;
+		height: 60px;
+
+		}
+
+		.pie4{
+		margin-left: 65px;
+		width: 320px;
+		height: 290px;
+		float:left;
+		margin-top: 30px;
+		
+		}
+		.pie5{
+		margin-left: 15px;
+		width: 262px;
+		height: 50px;
+		position: relative;
+		float:left;
+		border: none;
+        
+		}
+		.facebook {
+   		float: left;
+   		width: 50px;
+   		height: 45px;
+        background-image: url(img/social-icons.png);
+		border: none;
+		}
+
+		.facebook:hover {
+   		width: 50px;
+  		height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position: left 45px;
+
+		}
+
+		.twitter {
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -50px;
+		border: none;
+		}
+		.twitter:hover {
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.balon{
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -100px;
+		border: none;
+		}
+		.balon:hover{
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.wifi{  
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -153px;
+		border: none;
+		}
+		.wifi:hover{  
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+		.arbol{
+    	float: left;
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+		background-position-x: -204px;
+		border: none;
+		}
+		.arbol:hover{
+    	width: 50px;
+    	height: 46px;
+    	background-image: url(img/social-icons.png);
+    	background-position-y: 45px;
+		}
+
+
+		.pie6{
+		margin-left: 15px;
+		width: 1100px;
+		height: 35px;
+		margin-top: 400px;
+		background-color: rgb(62, 53, 53);
+		border: none;
+		float: left;
+		position: relative;
+        top: -390px;
+		}
+		.pie6 .letra{
+		color: grey;
+		padding-top:6px;
+		padding-left:6px;
+		border: none;
+		}
+		
+
+
+		.pie6 li a{
+		width: auto;height: auto;float: right;
+		position: relative;
+		padding: 12px;
+		bottom: 24px;
+		text-decoration: none;
+		color: white;
+		}
+		.pie6 li a:hover{
+		color: #d8450b;
+		}
+
+
+
+		.pie4 .titulo{
+		width: auto;
+		height: 40px;
+		border: none;
+		text-align: center;
+		margin-top: 5px;
+		}
+		.pie4 .fondo{
+		width: 70px;
+		height: 45px;
+		border: 1px solid red;
+		float: left;
+		margin-right: 8px;
+		margin-left: 22px;
+		margin-top: 10px;
+		}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+    <div id="encabezado">
+		<div class="logo">
+		</div>
+		<div id="menu">
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="features.html">Features</a></li>
+			  <li><a href="pages.html">Pages</a></li>
+			  <li><a href="galeria.html">Gallery</a></li>
+			  <li><a href="contacto.html">Contact</a></li>
+			  <li><a href="blog.html">Blog</a></li>
+              <li><a href="http://alejandrojim.com.es:8080/alejandrojim/AplicacionWebTomcat/webapp/saludosbis.jsp">Acceso</a></li>
+			</ul>
+		  </div>
+		
+		</div>
+
+    <div id="contacto">
+        <div id="zona1">
+            <div class="title">
+                <h1 class="titulo">CONTACTA CON NOSOTROS</h1>
+            </div>
+            <div class="descrip">¡Contáctanos! Estamos aquí para ayudarte. Si tienes alguna pregunta, comentario o
+                consulta, no dudes en comunicarte con nosotros. Completa el formulario de contacto a continuación y te
+                responderemos lo antes posible. ¡Esperamos saber de ti!</div>
+            <div id="mensaje" class="mensaje">Well done, you succesfully read this important alert message.</div>
+            <div class="cuestionario">
+                <div class="name">
+                    <div class="foto"></div>
+                    <textarea class="texto"></textarea>
+                </div>
+                <div class="address">
+                    <div class="foto"></div>
+                    <textarea class="texto"></textarea>
+                </div>
+                <div class="url">
+                    <div class="foto"></div>
+                    <textarea class="texto"></textarea>
+                </div>
+                <textarea class="caja"></textarea>
+                <input type="submit" value="Send Message" class="enviar">
+            </div>
+        </div>
+        <div id="zona2">
+            <div class="datos">DATOS DE CONTACTO</div>
+            <div class="solvam"></div>
+            <div class="info">
+                <div class="info1">Solvam </div>
+                <div class="info2">hola</div>
+                <div class="info2">hola</div>
+                <div class="info2">hola</div>
+                <div class="info3">hola</div>
+                <div class="info4">hola</div>
+            </div>
+            <div class="lugar">DONDE ESTAMOS</div>
+            <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24628.176387017054!2d-0.45968135!3d39.502705750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60454430dc7c97%3A0xb8683d03b5861eec!2sMercadona!5e0!3m2!1ses!2ses!4v1685346662573!5m2!1ses!2ses" width="350" height="273" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+    </div>
+    <div id="pie">
+        <div class="pie1">
+            <div class="titulo3"></div>
+            <div class="des5"></div>
+            <div class="des5"></div>
+        </div>	
+        <div class="pie2"></div>
+        <div class="pie3">
+            <div class="img4"></div>
+            <div class="des3"></div>
+            <div class="des3"></div>
+        </div>
+        <div class="pie4">
+    
+        <div class="titulo">TITLE</div>	
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+        <div class="fondo"></div>
+    
+        </div>
+        <div class="pie5">
+            <div class="facebook"></div>
+            <div class="twitter"></div>
+            <div class="balon"></div>
+            <div class="wifi"></div>
+            <div class="arbol"></div>
+        </div>	
+        <div class="pie6">
+            <div class="letra">Copyright 2017 SOLVAM. All rights reserverd</div>
+               <ul>
+                <li><a href="http://alejandrojim.com.es:8080/alejandrojim/AplicacionWebTomcat/webapp/saludosbis.jsp">Acceso</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contact</a></li>
+                <li><a href="galeria.html">Gallery</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="index.html">Home</a></li>
+                
+              </ul>
+            
+      
+        </div>
+    </div>
+</body>
+
+</html>
